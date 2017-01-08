@@ -1,0 +1,104 @@
+{
+	"vsphere" : {
+		"vcenterip" : "10.1.1.49",
+		"vcuser" : "administrator@vsphere.local",
+		"vcpass" : "nsxLab@123",
+		"dcname" : "Lab_Munish",
+		"clustername" : "Lab_Cluster",
+		"controllerdatastore" : "NSXDS01",
+		"controllerportgroup" : "transport"		
+	},
+	"mgmtvsphere" : {
+		"vcenterip" : "172.16.1.70",
+		"vcuser" : "administrator@vsphere.local",
+		"vcpass" : "nsxLab@123",
+		"dcname" : "Munish-Lab",
+		"clustername" : "Munish-Lab-Cluster",
+		"mgrdatastore" : "VESXi-Munish",
+		"esxihost" : "172.16.1.71",
+		"mgrportgroup" : "PG01"		
+	},
+	"nsx" : {
+		"vmname" : "NSX-MGR-01",
+		"hostname" : "10.1.1.51",
+		"ip" : "10.1.1.51",
+		"subnetmask" : "255.255.255.0",
+		"gateway" : "10.1.1.1",
+		"user" : "admin",
+		"pass" : "nsxL@b#12345",
+		"ovapath" : "C:\\Scripts\\VMware-NSX-Manager-6.2.4-4292526.ova",
+		"sshEnabled" : "True",
+		"ntp" : "10.1.1.1",
+		"dns_0" : "10.1.1.1",
+		"licensekey" : "Please paste your license key here"
+	},
+	"logicalswitch" : {
+		"name" : "Transit Logical Switch",
+		"description" : "Transit Traffice between DLR and ESG"
+	},
+	"vds" : {
+		"name" : "Compute-VDS",
+		"mtu" : "9000"
+	},
+	"ippool" : {
+		"name" : "NSX IP Pool 01",
+		"prefixlength" : "24",
+		"gateway" : "10.1.1.1",
+		"dnssuffix" : "nsxippool.lab.com",
+		"dnsserver01" : "10.1.1.1",
+		"dnsserver02" : "10.1.1.1",
+		"startipaddress" : "10.1.1.81",
+		"endipaddress" : "10.1.1.82"
+	},
+	"controllers" : {
+		"name" : "NSXController 01",
+		"pass" : "nsxL@b#12345"
+	},
+	"nsxsegment" : {
+		"name" : "Segment01",
+		"startid" : "20000",
+		"endid" : "30000"
+	},
+	"edge" : {
+		"clustername" : "Lab_Cluster",
+		"datastore" : "NSXDS01",
+		"portgroup" : "transport",
+		"name" : "Edge Services Gateway 01",
+		"fqdn" : "labesg.lab.com",
+		"uplinkname" : "Uplink NIC",
+		"uplinkip" : "10.1.1.70",
+		"uplinksubnetmask" : "255.255.255.0",
+		"uplinksubnetprefixlength" : "24",
+		"uplinkgateway" : "10.1.1.1",
+		"internalnicname" : "Internal NIC",
+		"internalnicip" : "192.168.1.2",
+		"internalnicsubnetmask" : "255.255.255.0",
+		"internalnicsubnetprefixlength" : "24",
+		"pass" : "nsxL@b#12345"
+	},
+	"vxlan" : {
+		"vlanid" : "0",
+		"teaming" : "FAILOVER_ORDER",
+		"mtu" : "1600",
+		"nicCount" : "1"
+	},
+	"transportzone" : {
+		"name" : "Transport Zone 01",
+		"description" : "Transport Zone 01",
+		"mode" : "UNICAST_MODE"
+	},
+	"ospf" : {
+		"protocoladdress" : "192.168.1.3",
+		"areaid" : "101"
+	},
+	"dlr" : {
+		"name" : "Distributed Logical Router 01",
+		"fqdn" : "labdlr01.lab.com",
+		"uplinkname" : "Uplink NIC",
+		"uplinkip" : "192.168.1.1",
+		"uplinksubnetmask" : "255.255.255.0",
+		"uplinksubnetprefixlength" : "24",
+		"datastore" : "NSXDS01",
+		"pass" : "nsxL@b#12345"
+	}
+}
