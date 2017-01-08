@@ -1,5 +1,5 @@
 # vmwarensxlabsetup
-It contains scripts(16) to quickly setup VMware NSX Lab to perform testing for basic Testing. It actually perform 15 tasks and for each task there is a script and all the scripts are called from single script named "nsxsetup.ps1"
+It contains PowerCLI Scripts(16) to quickly setup VMware NSX Lab to perform testing for basic Testing. It actually perform 15 tasks and for each task there is a script and all the scripts are called from single script named "nsxsetup.ps1"
 All the scripts captures the environment specific details via the json file named "infradetails.json"
 
 Usage Instructions 
