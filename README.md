@@ -28,3 +28,14 @@ Demo Link
 I have recorded Demo for the Script . ### No Audio. Visual Updates Only ###
 
 https://youtu.be/67YTv8NI7VY
+
+
+References
+
+I have used reference for other bloggers as well as the API Guide and developed in a style which works for me . It may not be perfect however I wanted to share so that it is available in case it is useful for some one 
+
+https://pubs.vmware.com/NSX-62/topic/com.vmware.ICbase/PDF/nsx_62_api.pdf
+https://networkinferno.net/license-nsx-via-automation-with-powercli
+https://vmtechie.wordpress.com/2016/06/19/deploy-distributed-logical-router-using-nsx-api/
+https://gist.github.com/lamw/988e4599c0f88d9fc25c9f2af8b72c92
+https://github.com/WahlNetwork/nsx-tier-builder/blob/master/Create-NSXTier.ps1
